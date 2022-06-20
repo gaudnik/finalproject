@@ -60,7 +60,19 @@ const Quiz = () => {
 
  }else {
   return (
-    <div></div>
+    <div className="container">
+     <div className="wrapper">
+      <h2 className="questions">
+       {questions[currentQuestion].question}
+      </h2>
+      <span className="text">
+       {`${currentQuestion}/${questions.length -1}`}
+      </span>
+      {questions[currentQuestion].variants.map((variant) => (
+          
+      ))}
+     </div>
+    </div>
   )
  }
 
