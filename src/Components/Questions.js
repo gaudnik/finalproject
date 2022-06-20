@@ -108,5 +108,16 @@
              "Morgan",
              "Nina"
          ]
+     },
+     {
+         "id": 10,
+         "question": "Who killed Dobby by throwing a knife at him?",
+         "answer": "Bellatrix Lestrange",
+         "variants": [
+             "Avery",
+             "Severus Snape",
+             "Mulciber",
+             "Bellatrix Lestrange"
+         ]
      }
  ];
