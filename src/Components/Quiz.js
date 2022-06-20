@@ -19,6 +19,18 @@ const Quiz = () => {
      .then(response => response.text())
      .then(result => console.log(result))
      .catch(error => console.log('error', error));
+
+ if (finish) {
+  return (
+    <div></div>
+  );
+
+ }else {
+  return (
+    <div></div>
+  )
+ }
+
 }
 
 
