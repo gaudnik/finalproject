@@ -55,7 +55,18 @@ const Quiz = () => {
 
  if (finish) {
   return (
-    <div></div>
+      <div className="container">
+       <div className="wrapper">
+        <h3 className="final_score">
+         {`Your final score is
+          ${score}/${questions.length - 1}
+          points.`}
+        </h3>
+        <button type= "button" className="btn" onClick={() => startOver()}>
+         Start Over
+        </button>
+       </div>
+      </div>
   );
 
  }else {
@@ -116,7 +127,6 @@ const Quiz = () => {
     </div>
   )
  }
-
 }
 
 
