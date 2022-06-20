@@ -40,6 +40,19 @@ const Quiz = () => {
   setClickAnswer(false);
  };
 
+ const finishHandler = () => {
+  if (currentQuestion === questions.length - 1) {
+   setFinish(true);
+  }
+ };
+
+ const startOver = () => {
+  setCurrentQuestion(0);
+  setFinish(false);
+  setMyAnswer("");
+  setScore(0);
+ };
+
  if (finish) {
   return (
     <div></div>
