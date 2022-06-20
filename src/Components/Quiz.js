@@ -35,6 +35,11 @@ const Quiz = () => {
   setShow(true);
  };
 
+ const reset = () => {
+  setShow(false);
+  setClickAnswer(false);
+ };
+
  if (finish) {
   return (
     <div></div>
