@@ -24,6 +24,11 @@ const Quiz = () => {
   setMyAnswer(variant);
   setClickAnswer(true);
  };
+ const checkCorrectAnswer = () => {
+  if (myAnswer === questions[currentQuestion].answer) {
+   setScore(score + 1);
+  }
+ };
 
  if (finish) {
   return (
