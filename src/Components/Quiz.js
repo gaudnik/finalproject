@@ -69,8 +69,49 @@ const Quiz = () => {
        {`${currentQuestion}/${questions.length -1}`}
       </span>
       {questions[currentQuestion].variants.map((variant) => (
-          
+          <div className="variants">
+           <p
+               key={variant.id}
+               className={`variant ${
+                   myAnswer === variant
+                       ? myAnswer === questions[currentQuestion].answer
+                           ? "correctAnswer"
+                           : "incorrectAnswer"
+                       : null
+               }`}
+               onClick={() => checkAnswer(variant)}
+           >
+            {variant}
+           </p>
+          </div>
       ))}
+      {clickAnswer && (
+          <button type="button" className="" onClick={() => showAnswer()}>
+           Show Answer
+          </button>
+      )}
+      {show && (
+          <p className="text-center">
+           Correct Answer: {questions[currentQuestion].answer}
+          </p>
+      )}
+      {currentQuestion < questions.length - 1 && (
+          <button
+              className=""
+              onClick={() => {
+               setCurrentQuestion(currentQuestion + 1);
+               checkCorrectAnswer();
+               reset();
+              }}
+          >
+           NEXT
+          </button>
+      )}
+      {currentQuestion === questions.length - 1 && (
+          <button type="button" className="" onClick={() => finishHandler()}>
+           FINISH
+          </button>
+      )}
      </div>
     </div>
   )
