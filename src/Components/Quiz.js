@@ -57,12 +57,12 @@ const Quiz = () => {
   return (
       <div className="container">
        <div className="wrapper">
-        <h3 className="final_score">
+        <h3 className="final__score">
          {`Your final score is
           ${score}/${questions.length - 1}
           points.`}
         </h3>
-        <button type= "button" className="btn" onClick={() => startOver()}>
+        <button type= "button" className="btn btn__start__over" onClick={() => startOver()}>
          Start Over
         </button>
        </div>
@@ -76,7 +76,7 @@ const Quiz = () => {
       <h2 className="questions">
        {questions[currentQuestion].question}
       </h2>
-      <span className="text">
+      <span className="text__center">
        {`${currentQuestion}/${questions.length -1}`}
       </span>
       {questions[currentQuestion].variants.map((variant) => (
@@ -97,18 +97,18 @@ const Quiz = () => {
           </div>
       ))}
       {clickAnswer && (
-          <button type="button" className="" onClick={() => showAnswer()}>
+          <button type="button" className="btn btn__answer" onClick={() => showAnswer()}>
            Show Answer
           </button>
       )}
       {show && (
-          <p className="text-center">
+          <p className="text__center">
            Correct Answer: {questions[currentQuestion].answer}
           </p>
       )}
       {currentQuestion < questions.length - 1 && (
           <button
-              className=""
+              className="btn btn__current__question"
               onClick={() => {
                setCurrentQuestion(currentQuestion + 1);
                checkCorrectAnswer();
@@ -119,7 +119,7 @@ const Quiz = () => {
           </button>
       )}
       {currentQuestion === questions.length - 1 && (
-          <button type="button" className="" onClick={() => finishHandler()}>
+          <button type="button" className="btn btn__finish" onClick={() => finishHandler()}>
            FINISH
           </button>
       )}
