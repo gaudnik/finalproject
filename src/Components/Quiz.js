@@ -20,6 +20,11 @@ const Quiz = () => {
      .then(result => console.log(result))
      .catch(error => console.log('error', error));
 
+ const checkAnswer = (variant) => {
+  setMyAnswer(variant);
+  setClickAnswer(true);
+ };
+
  if (finish) {
   return (
     <div></div>
