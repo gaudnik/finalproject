@@ -1,7 +1,7 @@
  export const questions = [
     {
         "id": 0,
-        "question": "First things first an easy one, what is the name of the first book?",
+        "question": "What is the name of the first book?",
         "answer": "Harry Potter and the Philosopher`s Stone",
         "variants": [
             "Harry Potter and the Chamber of Secrets",
@@ -45,7 +45,7 @@
      },
      {
          "id": 4,
-         "question": "how many people started hogwarts?",
+         "question": "How many people started hogwarts?",
          "answer": "4",
          "variants": [
              "4",
@@ -78,7 +78,7 @@
      },
      {
          "id": 7,
-         "question": "who is the publisher of the \"Juggler\"?",
+         "question": "Who is the publisher of the \"Juggler\"?",
          "answer": "Xenophilius Lovegood",
          "variants": [
              "Lucius Malfoy",

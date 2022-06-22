@@ -22,52 +22,15 @@ code {
   align-items: center;
   justify-content: center;
   background: $color-white;
-  padding: 60px;
+  padding: 0 60px;
   text-align: center;
+  height: 100%;
   width: 60%;
-  height: 600px;
-  opacity:0.5;
+  opacity:0.7;
   line-height: 1.4em;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-  margin: 8rem 25rem;
+  margin: 0 25rem;
   border-radius: 10px;
-
-  .questions__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8rem;
-    margin-bottom: 1rem;
-
-    h2 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-      color: $color-black;
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
-
-  .text__center {
-    font-size: 2rem;
-    color: $color-green;
-  }
-  .variants {
-    font-size: 2rem;
-    line-height: 4rem;
-    :hover {
-      transform: scale(1.1);
-      background-color: $color-white;
-      box-shadow: 0 0 30px $color-green;
-    }
-
-    p {
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-      border-radius: 10px;
-      margin-top: 2rem;
-    }
-    }
-
 
 }
 
