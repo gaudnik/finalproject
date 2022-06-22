@@ -5,9 +5,8 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./src/image/background.jpg);
+  background-image: url(../image/background.jpg);
   background-size: cover;
-  height: 100%;
 }
 
 code {
@@ -22,11 +21,19 @@ code {
   padding: 60px;
   text-align: center;
   width: 60%;
-  font-family: Georgia, serif;
+  height: 400px;
+  //font-family: Georgia, serif;
   opacity:0.5;
   line-height: 1.4em;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   margin: 16rem 25rem;
   border-radius: 10px;
+
+h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #ffffff;
+  padding-bottom:10px;
+}
 }
 
