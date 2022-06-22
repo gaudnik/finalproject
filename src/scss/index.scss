@@ -1,2 +1,7 @@
-@import "src/scss/reset";
+@import "generic/reset";
+
+@import "misc/colors";
+@import "misc/mixins";
+@import "misc/variable";
+
 @import "elements/base";

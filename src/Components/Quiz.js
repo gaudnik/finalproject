@@ -73,9 +73,11 @@ const Quiz = () => {
   return (
     <div className="container">
      <div className="wrapper">
-      <h2 className="questions">
+      <div className="questions__box">
+      <h2 className="question">
        {questions[currentQuestion].question}
       </h2>
+      </div>
       <span className="text__center">
        {`${currentQuestion}/${questions.length -1}`}
       </span>
@@ -130,4 +132,4 @@ const Quiz = () => {
 }
 
 
-export default Quiz
+export default Quiz;
