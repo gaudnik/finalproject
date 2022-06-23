@@ -21,16 +21,17 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $color-white;
+  background: $color-primary;
   padding: 0 60px;
   text-align: center;
   height: 100%;
   width: 60%;
   opacity:0.7;
   line-height: 1.4em;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.9);
   margin: 0 25rem;
   border-radius: 10px;
+  border: 2px solid $color-green;
 
 }
 
