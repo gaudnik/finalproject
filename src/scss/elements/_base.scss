@@ -8,6 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../image/background.jpg);
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -22,7 +25,6 @@ code {
   align-items: center;
   justify-content: center;
   background: $color-primary;
-  padding: 0 60px;
   text-align: center;
   height: 100%;
   width: 60%;
