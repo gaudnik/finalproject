@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React Index](https://github.com/facebook/create-react-app).
 
+Life version: https://harrypotter-quiz.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
